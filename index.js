@@ -15,12 +15,12 @@ const port = process.env.PORT || '3000';
 var resString = 'Space1';
 
 
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 /**
 * Set to Node.js native promises
 * Per https://mongoosejs.com/docs/promises.html
 */
-mongoose.Promise = global.Promise;
+//mongoose.Promise = global.Promise;
 
 //const env = require('./env/environment');
 
