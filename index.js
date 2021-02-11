@@ -17,7 +17,7 @@ var getCustomers = function (db, callback) {
     cursor.each(function (err, doc) {
         assert.equal(err, null);
         if (doc != null) {
-            resString = resString + doc.id + '   ' + doc.givenname
+            resString = resString + doc.id + '   ' + doc.givenname;
         } else {
             callback();
         }
