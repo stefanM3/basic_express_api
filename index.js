@@ -13,13 +13,13 @@ const port = process.env.PORT || '3000';
 
 
 //added below
-//var MongoClient = require('mongodb').MongoClient;
+var MongoClient = require('mongodb').MongoClient;
 //const CosmosClient = require("@azure/cosmos").CosmosClient;
 //const client = new CosmosClient({ endpoint, key });
 //var assert = require('assert');
 //var ObjectId = require('mongodb').ObjectID;
 //var url = 'mongodb://stefandb3:AI06RGXX1rx8AQh36oV4I9GwwInECpEkpCsCAVQc16ZpEUQACn96vrc3iOVA3acB6NTUmUeB2CUAoehI1DQa9g%3D%3D@stefandb3.mongo.cosmos.azure.com:10255/?ssl=true&appName=@stefandb3@';
-var resString = 'Space6!';
+var resString = 'Space7!';
 
 // Core module
 //var core = require('mongodb-core'),
