@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 FROM node:12
 
 # Create app directory
@@ -20,4 +21,28 @@ COPY . .
 
 EXPOSE 8080
 
+=======
+FROM node:12
+
+# Create app directory
+
+WORKDIR /usr/src/app
+
+# Install app dependencies
+
+COPY package*.json ./
+
+RUN npm install
+
+# If you are building your code for production
+
+# RUN npm ci --only=production
+
+# Bundle app source
+
+COPY . .
+
+EXPOSE 8080
+
+>>>>>>> 3852ea1f4ae8ac025631a7998e739a19a643c57d
 CMD [ "node", "index.js" ]
