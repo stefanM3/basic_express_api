@@ -86,7 +86,7 @@ MongoClient.connect(url, function (err, client) {
 
 app.get('/', (req, res) => {
 
-    res.send('Givenname   Surname \\n' + resString);
+    res.send('Givenname   Surname <br>' + resString);
 
 });
 
