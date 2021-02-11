@@ -6,9 +6,9 @@ const app = express();
 const port = process.env.PORT || '3000';
 
 var mongoClient = require("mongodb").MongoClient;
-mongoClient.connect("mongodb://stefandb4:TAgU7FrOvuXSy4rcjMxT1juHZaM99X5m53vgdcwTBqdkRgYIqDZNEMbCki0MCQrundU3pjduUBh61XOcqAtXBw%3D%3D@stefandb4.mongo.cosmos.azure.com:10255/?ssl=true&appName=@stefandb4@", function (err, client) {
-    client.close();
-});
+//mongoClient.connect("mongodb://stefandb4:TAgU7FrOvuXSy4rcjMxT1juHZaM99X5m53vgdcwTBqdkRgYIqDZNEMbCki0MCQrundU3pjduUBh61XOcqAtXBw%3D%3D@stefandb4.mongo.cosmos.azure.com:10255/?ssl=true&appName=@stefandb4@", function (err, client) {
+//    client.close();
+//});
 
 
 
@@ -19,7 +19,7 @@ mongoClient.connect("mongodb://stefandb4:TAgU7FrOvuXSy4rcjMxT1juHZaM99X5m53vgdcw
 //var assert = require('assert');
 //var ObjectId = require('mongodb').ObjectID;
 //var url = 'mongodb://stefandb3:AI06RGXX1rx8AQh36oV4I9GwwInECpEkpCsCAVQc16ZpEUQACn96vrc3iOVA3acB6NTUmUeB2CUAoehI1DQa9g%3D%3D@stefandb3.mongo.cosmos.azure.com:10255/?ssl=true&appName=@stefandb3@';
-var resString = 'Space1';
+var resString = 'Space2';
 
 
 //const mongoose = require('mongoose');
