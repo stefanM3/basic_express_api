@@ -50,7 +50,7 @@ var getCustomers = function (db, callback) {
     cursor.each(function (err, doc) {
       //  assert.equal(err, null);
         if (doc != null) {
-            resString = resString + doc.id + '   ' + doc.givenname;
+            resString = resString + doc.id + '   ' + doc.givenname + '\n';
         } else {
             // callback();
         }
@@ -86,7 +86,7 @@ MongoClient.connect(url, function (err, client) {
 
 app.get('/', (req, res) => {
 
-    res.send('Your Express API is up and running! and finished this tutorial eller inte1?' + resString);
+    res.send('Förnamn   Efternamn \n' + resString);
 
 });
 
