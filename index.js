@@ -19,7 +19,7 @@ var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var ObjectId = require('mongodb').ObjectID;
 var url = 'mongodb://stefandb3:AI06RGXX1rx8AQh36oV4I9GwwInECpEkpCsCAVQc16ZpEUQACn96vrc3iOVA3acB6NTUmUeB2CUAoehI1DQa9g%3D%3D@stefandb3.mongo.cosmos.azure.com:10255/?ssl=true&appName=@stefandb3@';
-var resString = 'Space9!';
+var resString = '   ';
 
 // Core module
 //var core = require('mongodb-core'),
@@ -50,7 +50,7 @@ var getCustomers = function (db, callback) {
     cursor.each(function (err, doc) {
       //  assert.equal(err, null);
         if (doc != null) {
-            resString = resString + doc.id + '   ' + doc.givenname + '\n';
+            resString = '   ' + resString + doc.id + '   ' + doc.givenname + '<br>';
         } else {
             // callback();
         }
@@ -86,7 +86,7 @@ MongoClient.connect(url, function (err, client) {
 
 app.get('/', (req, res) => {
 
-    res.send('Givenname   Surname <br>' + resString);
+    res.send('Surname   Givenname <br>' + resString);
 
 });
 
