@@ -14,7 +14,7 @@ var mongoClient = require("mongodb").MongoClient;
 
 //added below
 //var MongoClient = require('mongodb').MongoClient;
-const CosmosClient = require("@azure/cosmos").CosmosClient;
+//const CosmosClient = require("@azure/cosmos").CosmosClient;
 //const client = new CosmosClient({ endpoint, key });
 //var assert = require('assert');
 //var ObjectId = require('mongodb').ObjectID;
