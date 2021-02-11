@@ -19,7 +19,14 @@ var mongoClient = require("mongodb").MongoClient;
 //var assert = require('assert');
 //var ObjectId = require('mongodb').ObjectID;
 //var url = 'mongodb://stefandb3:AI06RGXX1rx8AQh36oV4I9GwwInECpEkpCsCAVQc16ZpEUQACn96vrc3iOVA3acB6NTUmUeB2CUAoehI1DQa9g%3D%3D@stefandb3.mongo.cosmos.azure.com:10255/?ssl=true&appName=@stefandb3@';
-var resString = 'Space2';
+var resString = 'Space3';
+
+// Core module
+var core = require('mongodb-core'),
+    Instrumentation = require('./lib/apm');
+
+// Set up the connect function
+var connect = require('./lib/mongo_client').connect;
 
 
 //const mongoose = require('mongoose');
