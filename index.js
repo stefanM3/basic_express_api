@@ -5,7 +5,7 @@ const app = express();
 
 const port = process.env.PORT || '3000';
 
-var mongoClient = require("mongodb").MongoClient;
+//var mongoClient = require("mongodb").MongoClient;
 //mongoClient.connect("mongodb://stefandb4:TAgU7FrOvuXSy4rcjMxT1juHZaM99X5m53vgdcwTBqdkRgYIqDZNEMbCki0MCQrundU3pjduUBh61XOcqAtXBw%3D%3D@stefandb4.mongo.cosmos.azure.com:10255/?ssl=true&appName=@stefandb4@", function (err, client) {
 //    client.close();
 //});
